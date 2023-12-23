@@ -39,9 +39,9 @@ class _ScreenPageState extends State<ScreenPage> {
           children: [
             Stack(children: <Widget>[
               Align(
-                child: Image.network(
+                child: Image.asset(
+                  'assets/images/burger.jpg',
                   fit: BoxFit.fill,
-                  "https://images.pexels.com/photos/10692547/pexels-photo-10692547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                   height: 200,
                   width: double.infinity,
                 ),
@@ -252,7 +252,7 @@ class _ScreenPageState extends State<ScreenPage> {
                               children: [
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(8),
-                                  child: Image.network(
+                                  child: Image.asset(
                                     _products[index].image,
                                     fit: BoxFit.fill,
                                     height: 120,
@@ -477,21 +477,18 @@ final List<Product> _products = [
     name: 'Chicken Crunch Burger',
     subtitle: 'It is a long established fact that a reader will be distracted.',
     price: 209,
-    image:
-        "https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg",
+    image: "assets/images/burger.jpg",
   ),
   Product(
-      name: 'Mighty Chicken Patty Burger',
-      subtitle:
-          'It is a long established fact that a reader will be distracted.',
-      price: 259,
-      image:
-          "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"),
+    name: 'Mighty Chicken Patty Burger',
+    subtitle: 'It is a long established fact that a reader will be distracted.',
+    price: 259,
+    image: 'assets/images/burger.jpg',
+  ),
   Product(
-      name: 'Donut Header Chicken',
-      subtitle:
-          "It is a long established fact that a reader will be distracted.",
-      price: 199,
-      image:
-          "https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg"),
+    name: 'Donut Header Chicken',
+    subtitle: "It is a long established fact that a reader will be distracted.",
+    price: 199,
+    image: 'assets/images/burger.jpg',
+  ),
 ];
